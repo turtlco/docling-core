@@ -1,3 +1,9 @@
+## [v2.37.0](https://github.com/docling-project/docling-core/releases/tag/v2.37.0) - 2025-06-13
+
+### Feature
+
+* Add improved table serializer and visualizer ([#328](https://github.com/docling-project/docling-core/issues/328)) ([`3b99879`](https://github.com/docling-project/docling-core/commit/3b998795b880b1fcc25d19111d405993b1ec0fa6))
+
 ## [v2.36.0](https://github.com/docling-project/docling-core/releases/tag/v2.36.0) - 2025-06-11
 
 ### Feature
