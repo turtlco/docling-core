@@ -1,3 +1,15 @@
+## [v2.38.0](https://github.com/docling-project/docling-core/releases/tag/v2.38.0) - 2025-06-18
+
+### Feature
+
+* **viz:** Add reading order branch numbering, fix cross-page lists ([#334](https://github.com/docling-project/docling-core/issues/334)) ([`78b7962`](https://github.com/docling-project/docling-core/commit/78b796221dd56e151b81828aa102cd4a38ea13b3))
+* Add parameter to choose of which pages export the doctags ([#290](https://github.com/docling-project/docling-core/issues/290)) ([`0fd3c1c`](https://github.com/docling-project/docling-core/commit/0fd3c1cbe609d9fe3abe10819ea85a95c29c0e57))
+
+### Fix
+
+* Expose base types consistently ([#332](https://github.com/docling-project/docling-core/issues/332)) ([`2e14a74`](https://github.com/docling-project/docling-core/commit/2e14a74936ab247f5682e5ee1599e9abfdb4f83d))
+* **HybridChunker:** Improve long heading handling ([#333](https://github.com/docling-project/docling-core/issues/333)) ([`5c99722`](https://github.com/docling-project/docling-core/commit/5c99722b3817d4a6e8d0f315891156ae4422897c))
+
 ## [v2.37.0](https://github.com/docling-project/docling-core/releases/tag/v2.37.0) - 2025-06-13
 
 ### Feature
