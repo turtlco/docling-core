@@ -1,3 +1,9 @@
+## [v2.38.1](https://github.com/docling-project/docling-core/releases/tag/v2.38.1) - 2025-06-20
+
+### Fix
+
+* **markdown:** Add heading formatting, fix code & formula formatting ([#336](https://github.com/docling-project/docling-core/issues/336)) ([`c9374e8`](https://github.com/docling-project/docling-core/commit/c9374e8fe48de8d82a102f7c4f30b9c90370b4ac))
+
 ## [v2.38.0](https://github.com/docling-project/docling-core/releases/tag/v2.38.0) - 2025-06-18
 
 ### Feature
