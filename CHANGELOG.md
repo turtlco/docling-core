@@ -1,3 +1,10 @@
+## [v2.38.2](https://github.com/docling-project/docling-core/releases/tag/v2.38.2) - 2025-06-25
+
+### Fix
+
+* Add missing mimetypes for asr inputs ([#341](https://github.com/docling-project/docling-core/issues/341)) ([`c2fd20f`](https://github.com/docling-project/docling-core/commit/c2fd20fad7ef0e85ecd2ce16ff10f110d6a6c154))
+* Add text direction to export_to_textlines ([#338](https://github.com/docling-project/docling-core/issues/338)) ([`425b191`](https://github.com/docling-project/docling-core/commit/425b191a90ef48c186567ef4c3bfe605938273bb))
+
 ## [v2.38.1](https://github.com/docling-project/docling-core/releases/tag/v2.38.1) - 2025-06-20
 
 ### Fix
