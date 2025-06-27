@@ -1,3 +1,10 @@
+## [v2.39.0](https://github.com/docling-project/docling-core/releases/tag/v2.39.0) - 2025-06-27
+
+### Feature
+
+* Remodel lists, add MD & HTML ser. params, enable unset marker ([#339](https://github.com/docling-project/docling-core/issues/339)) ([`14a4fde`](https://github.com/docling-project/docling-core/commit/14a4fdee876a033934d2e5d9d60ba7518c828846))
+* Download Google docs and drive files via export url ([#335](https://github.com/docling-project/docling-core/issues/335)) ([`3eeb259`](https://github.com/docling-project/docling-core/commit/3eeb2596c668c5c35d616e1c9e0b66ba9a2eae2f))
+
 ## [v2.38.2](https://github.com/docling-project/docling-core/releases/tag/v2.38.2) - 2025-06-25
 
 ### Fix
