@@ -1,3 +1,13 @@
+## [v2.40.0](https://github.com/docling-project/docling-core/releases/tag/v2.40.0) - 2025-07-02
+
+### Feature
+
+* Added different content-layers ([#345](https://github.com/docling-project/docling-core/issues/345)) ([`eb2538e`](https://github.com/docling-project/docling-core/commit/eb2538eb3ac61379c810e09f89885395a835012b))
+
+### Fix
+
+* BoundingRectangle angle computation when in `CoordOrigin.TOPLEFT` ([#347](https://github.com/docling-project/docling-core/issues/347)) ([`9fa0c9f`](https://github.com/docling-project/docling-core/commit/9fa0c9f8bed531a46c165990d255893e12857e82))
+
 ## [v2.39.0](https://github.com/docling-project/docling-core/releases/tag/v2.39.0) - 2025-06-27
 
 ### Feature
