@@ -1,3 +1,9 @@
+## [v2.41.0](https://github.com/docling-project/docling-core/releases/tag/v2.41.0) - 2025-07-09
+
+### Feature
+
+* Enable precision control in float serialization ([#352](https://github.com/docling-project/docling-core/issues/352)) ([`baa2cc3`](https://github.com/docling-project/docling-core/commit/baa2cc371452c6e1c7086616d092264edc2f2b44))
+
 ## [v2.40.0](https://github.com/docling-project/docling-core/releases/tag/v2.40.0) - 2025-07-02
 
 ### Feature
