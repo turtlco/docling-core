@@ -1,3 +1,10 @@
+## [v2.42.0](https://github.com/docling-project/docling-core/releases/tag/v2.42.0) - 2025-07-09
+
+### Feature
+
+* Extend and expose float serialization control ([#353](https://github.com/docling-project/docling-core/issues/353)) ([`c339171`](https://github.com/docling-project/docling-core/commit/c339171517014873f0e56f5bfd7e366abb42d558))
+* Additional DoclingDocument methods for use in MCP document manipulation ([#344](https://github.com/docling-project/docling-core/issues/344)) ([`cb59fd3`](https://github.com/docling-project/docling-core/commit/cb59fd39bc8a932b64131cef506a59bb78481aff))
+
 ## [v2.41.0](https://github.com/docling-project/docling-core/releases/tag/v2.41.0) - 2025-07-09
 
 ### Feature
