@@ -1,3 +1,13 @@
+## [v2.43.0](https://github.com/docling-project/docling-core/releases/tag/v2.43.0) - 2025-07-16
+
+### Feature
+
+* Add page chunking ([#337](https://github.com/docling-project/docling-core/issues/337)) ([`3a0b747`](https://github.com/docling-project/docling-core/commit/3a0b7471bacbea04a0238c1d559a8ac56ed552ea))
+
+### Fix
+
+* Only save applicable page images ([#226](https://github.com/docling-project/docling-core/issues/226)) ([`ebd9147`](https://github.com/docling-project/docling-core/commit/ebd9147cedf44ea6fe6373aee06b1c5f5025ce96))
+
 ## [v2.42.0](https://github.com/docling-project/docling-core/releases/tag/v2.42.0) - 2025-07-09
 
 ### Feature
