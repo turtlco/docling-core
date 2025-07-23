@@ -1,3 +1,10 @@
+## [v2.43.1](https://github.com/docling-project/docling-core/releases/tag/v2.43.1) - 2025-07-23
+
+### Fix
+
+* LayoutVisualizer should traverse pictures ([#358](https://github.com/docling-project/docling-core/issues/358)) ([`f9b3b49`](https://github.com/docling-project/docling-core/commit/f9b3b499dea3a3564aa23ebdf4fe97e5084e42ed))
+* HTML serialization of nested lists ([#359](https://github.com/docling-project/docling-core/issues/359)) ([`5a7883c`](https://github.com/docling-project/docling-core/commit/5a7883cee5e823e4ea3bbee53a2ecdd33b92edce))
+
 ## [v2.43.0](https://github.com/docling-project/docling-core/releases/tag/v2.43.0) - 2025-07-16
 
 ### Feature
