@@ -1,3 +1,9 @@
+## [v2.44.0](https://github.com/docling-project/docling-core/releases/tag/v2.44.0) - 2025-07-28
+
+### Feature
+
+* Key-value visualizer ([#360](https://github.com/docling-project/docling-core/issues/360)) ([`0f7ca77`](https://github.com/docling-project/docling-core/commit/0f7ca77ccfd99fb4ff91714faf5f397457658865))
+
 ## [v2.43.1](https://github.com/docling-project/docling-core/releases/tag/v2.43.1) - 2025-07-23
 
 ### Fix
