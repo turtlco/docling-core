@@ -1,3 +1,9 @@
+## [v2.44.1](https://github.com/docling-project/docling-core/releases/tag/v2.44.1) - 2025-07-30
+
+### Fix
+
+* Referenced artifacts relative to the document location ([#361](https://github.com/docling-project/docling-core/issues/361)) ([`5afa99e`](https://github.com/docling-project/docling-core/commit/5afa99e028f9746cbb56218be066fa6ac5dc29db))
+
 ## [v2.44.0](https://github.com/docling-project/docling-core/releases/tag/v2.44.0) - 2025-07-28
 
 ### Feature
