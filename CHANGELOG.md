@@ -1,3 +1,9 @@
+## [v2.44.2](https://github.com/docling-project/docling-core/releases/tag/v2.44.2) - 2025-08-14
+
+### Fix
+
+* **HTML:** Fix nested list serialization edge cases ([#367](https://github.com/docling-project/docling-core/issues/367)) ([`807d972`](https://github.com/docling-project/docling-core/commit/807d972f05383fc1446bc36561244e0bb79b7eb4))
+
 ## [v2.44.1](https://github.com/docling-project/docling-core/releases/tag/v2.44.1) - 2025-07-30
 
 ### Fix
