@@ -1,3 +1,13 @@
+## [v2.45.0](https://github.com/docling-project/docling-core/releases/tag/v2.45.0) - 2025-08-20
+
+### Feature
+
+* Add document concatenation ([#365](https://github.com/docling-project/docling-core/issues/365)) ([`99eabb3`](https://github.com/docling-project/docling-core/commit/99eabb3b01dceb6ec907ecee993d73adcc825398))
+
+### Fix
+
+* Add forward slashes to singleton tags ([#369](https://github.com/docling-project/docling-core/issues/369)) ([`23badf2`](https://github.com/docling-project/docling-core/commit/23badf2a1d8fcd3b020511da0c8f4442e78d7011))
+
 ## [v2.44.2](https://github.com/docling-project/docling-core/releases/tag/v2.44.2) - 2025-08-14
 
 ### Fix
