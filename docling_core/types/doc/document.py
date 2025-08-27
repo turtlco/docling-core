@@ -2526,6 +2526,7 @@ class DoclingDocument(BaseModel):
         content_layer: Optional[ContentLayer] = None,
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
+        font_metadata: Optional[List[Dict[str, Any]]] = None,
     ):
         """add_list_item.
 
@@ -2557,6 +2558,7 @@ class DoclingDocument(BaseModel):
             marker=marker or "",
             formatting=formatting,
             hyperlink=hyperlink,
+            font_metadata=font_metadata,
         )
         if prov:
             list_item.prov.append(prov)
@@ -2578,6 +2580,7 @@ class DoclingDocument(BaseModel):
         content_layer: Optional[ContentLayer] = None,
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
+        font_metadata: Optional[List[Dict[str, Any]]] = None,
     ):
         """add_text.
 
@@ -2599,6 +2602,7 @@ class DoclingDocument(BaseModel):
                 content_layer=content_layer,
                 formatting=formatting,
                 hyperlink=hyperlink,
+                font_metadata=font_metadata,
             )
 
         elif label in [DocItemLabel.LIST_ITEM]:
@@ -2610,6 +2614,7 @@ class DoclingDocument(BaseModel):
                 content_layer=content_layer,
                 formatting=formatting,
                 hyperlink=hyperlink,
+                font_metadata=font_metadata,
             )
 
         elif label in [DocItemLabel.SECTION_HEADER]:
@@ -2622,6 +2627,7 @@ class DoclingDocument(BaseModel):
                 content_layer=content_layer,
                 formatting=formatting,
                 hyperlink=hyperlink,
+                font_metadata=font_metadata,
             )
 
         elif label in [DocItemLabel.CODE]:
@@ -2633,6 +2639,7 @@ class DoclingDocument(BaseModel):
                 content_layer=content_layer,
                 formatting=formatting,
                 hyperlink=hyperlink,
+                font_metadata=font_metadata,
             )
         elif label in [DocItemLabel.FORMULA]:
             return self.add_formula(
@@ -2663,6 +2670,7 @@ class DoclingDocument(BaseModel):
                 parent=parent.get_ref(),
                 formatting=formatting,
                 hyperlink=hyperlink,
+                font_metadata=font_metadata,
             )
             if prov:
                 text_item.prov.append(prov)
@@ -2771,6 +2779,7 @@ class DoclingDocument(BaseModel):
         content_layer: Optional[ContentLayer] = None,
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
+        font_metadata: Optional[List[Dict[str, Any]]] = None,
     ):
         """add_title.
 
@@ -2795,6 +2804,7 @@ class DoclingDocument(BaseModel):
             parent=parent.get_ref(),
             formatting=formatting,
             hyperlink=hyperlink,
+            font_metadata=font_metadata,
         )
         if prov:
             item.prov.append(prov)
@@ -2817,6 +2827,7 @@ class DoclingDocument(BaseModel):
         content_layer: Optional[ContentLayer] = None,
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
+        font_metadata: Optional[List[Dict[str, Any]]] = None,
     ):
         """add_code.
 
@@ -2843,6 +2854,7 @@ class DoclingDocument(BaseModel):
             parent=parent.get_ref(),
             formatting=formatting,
             hyperlink=hyperlink,
+            font_metadata=font_metadata,
         )
         if code_language:
             code_item.code_language = code_language
@@ -2867,6 +2879,7 @@ class DoclingDocument(BaseModel):
         content_layer: Optional[ContentLayer] = None,
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
+        font_metadata: Optional[List[Dict[str, Any]]] = None,
     ):
         """add_formula.
 
@@ -2891,6 +2904,7 @@ class DoclingDocument(BaseModel):
             parent=parent.get_ref(),
             formatting=formatting,
             hyperlink=hyperlink,
+            font_metadata=font_metadata,
         )
         if prov:
             section_header_item.prov.append(prov)
@@ -2912,6 +2926,7 @@ class DoclingDocument(BaseModel):
         content_layer: Optional[ContentLayer] = None,
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
+        font_metadata: Optional[List[Dict[str, Any]]] = None,
     ):
         """add_heading.
 
@@ -2938,6 +2953,7 @@ class DoclingDocument(BaseModel):
             parent=parent.get_ref(),
             formatting=formatting,
             hyperlink=hyperlink,
+            font_metadata=font_metadata,
         )
         if prov:
             section_header_item.prov.append(prov)
