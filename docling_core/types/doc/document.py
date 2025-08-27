@@ -1191,6 +1191,8 @@ class TextItem(DocItem):
     orig: str  # untreated representation
     text: str  # sanitized representation
 
+    font_metadata: Optional[List[Dict[str, Any]]] = None
+
     formatting: Optional[Formatting] = None
     hyperlink: Optional[Union[AnyUrl, Path]] = Field(
         union_mode="left_to_right", default=None
