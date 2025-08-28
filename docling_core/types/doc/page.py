@@ -547,7 +547,7 @@ class SegmentedPdfPage(SegmentedPage):
     # Redefine typing to use PdfPageDimensions
     dimension: PdfPageGeometry
 
-    background_color: Optional[str] = None
+    metadata: Dict[str, Any] = Field(default_factory=dict)
 
     lines: List[PdfLine] = []
 

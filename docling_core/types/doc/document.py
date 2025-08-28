@@ -1948,7 +1948,7 @@ class PageItem(BaseModel):
     size: Size
     image: Optional[ImageRef] = None
     page_no: int
-    background_color: Optional[str] = None
+    metadata: Dict[str, Any] = Field(default_factory=dict)
 
 class DoclingDocument(BaseModel):
     """DoclingDocument."""
@@ -5444,15 +5444,17 @@ class DoclingDocument(BaseModel):
         page_no: int,
         size: Size,
         image: Optional[ImageRef] = None,
-        background_color: Optional[str] = None,
+        metadata: Optional[Dict[str, Any]] = None,
     ) -> PageItem:
         """add_page.
 
         :param page_no: int:
         :param size: Size:
+        :param image: Optional[ImageRef]:
+        :param metadata: Optional[Dict[str, Any]]:
 
         """
-        pitem = PageItem(page_no=page_no, size=size, image=image, background_color=background_color)
+        pitem = PageItem(page_no=page_no, size=size, image=image, metadata=metadata)
 
         self.pages[page_no] = pitem
         return pitem
