@@ -547,6 +547,8 @@ class SegmentedPdfPage(SegmentedPage):
     # Redefine typing to use PdfPageDimensions
     dimension: PdfPageGeometry
 
+    background_color: Optional[str] = None
+
     lines: List[PdfLine] = []
 
     # Redefine typing of elements to include PdfTextCell
