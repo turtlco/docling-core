@@ -546,9 +546,6 @@ class SegmentedPdfPage(SegmentedPage):
 
     # Redefine typing to use PdfPageDimensions
     dimension: PdfPageGeometry
-
-    metadata: Dict[str, Any] = Field(default_factory=dict)
-
     lines: List[PdfLine] = []
 
     # Redefine typing of elements to include PdfTextCell
