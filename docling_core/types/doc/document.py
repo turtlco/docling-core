@@ -1948,7 +1948,7 @@ class PageItem(BaseModel):
     size: Size
     image: Optional[ImageRef] = None
     page_no: int
-
+    background_color: Optional[str] = None
 
 class DoclingDocument(BaseModel):
     """DoclingDocument."""
@@ -5440,7 +5440,11 @@ class DoclingDocument(BaseModel):
         return "\n".join(result)
 
     def add_page(
-        self, page_no: int, size: Size, image: Optional[ImageRef] = None
+        self,
+        page_no: int,
+        size: Size,
+        image: Optional[ImageRef] = None,
+        background_color: Optional[str] = None,
     ) -> PageItem:
         """add_page.
 
@@ -5448,7 +5452,7 @@ class DoclingDocument(BaseModel):
         :param size: Size:
 
         """
-        pitem = PageItem(page_no=page_no, size=size, image=image)
+        pitem = PageItem(page_no=page_no, size=size, image=image, background_color=background_color)
 
         self.pages[page_no] = pitem
         return pitem
