@@ -286,6 +286,7 @@ class TextCell(ColorMixin, OrderedElement):
     orig: str
 
     font_metadata: Optional[List[Dict[str, Any]]] = None
+    background_color: Optional[str] = None
 
     text_direction: TextDirection = TextDirection.LEFT_TO_RIGHT
 

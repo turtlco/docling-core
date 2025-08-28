@@ -1192,6 +1192,7 @@ class TextItem(DocItem):
     text: str  # sanitized representation
 
     font_metadata: Optional[List[Dict[str, Any]]] = None
+    background_color: Optional[str] = None
 
     formatting: Optional[Formatting] = None
     hyperlink: Optional[Union[AnyUrl, Path]] = Field(
@@ -2527,6 +2528,7 @@ class DoclingDocument(BaseModel):
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
         font_metadata: Optional[List[Dict[str, Any]]] = None,
+        background_color: Optional[str] = None,
     ):
         """add_list_item.
 
@@ -2559,6 +2561,7 @@ class DoclingDocument(BaseModel):
             formatting=formatting,
             hyperlink=hyperlink,
             font_metadata=font_metadata,
+            background_color=background_color,
         )
         if prov:
             list_item.prov.append(prov)
@@ -2581,6 +2584,7 @@ class DoclingDocument(BaseModel):
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
         font_metadata: Optional[List[Dict[str, Any]]] = None,
+        background_color: Optional[str] = None,
     ):
         """add_text.
 
@@ -2615,6 +2619,7 @@ class DoclingDocument(BaseModel):
                 formatting=formatting,
                 hyperlink=hyperlink,
                 font_metadata=font_metadata,
+                background_color=background_color,
             )
 
         elif label in [DocItemLabel.SECTION_HEADER]:
@@ -2628,6 +2633,7 @@ class DoclingDocument(BaseModel):
                 formatting=formatting,
                 hyperlink=hyperlink,
                 font_metadata=font_metadata,
+                background_color=background_color,
             )
 
         elif label in [DocItemLabel.CODE]:
@@ -2640,6 +2646,7 @@ class DoclingDocument(BaseModel):
                 formatting=formatting,
                 hyperlink=hyperlink,
                 font_metadata=font_metadata,
+                background_color=background_color,
             )
         elif label in [DocItemLabel.FORMULA]:
             return self.add_formula(
@@ -2650,6 +2657,7 @@ class DoclingDocument(BaseModel):
                 content_layer=content_layer,
                 formatting=formatting,
                 hyperlink=hyperlink,
+                background_color=background_color,
             )
 
         else:
@@ -2671,6 +2679,7 @@ class DoclingDocument(BaseModel):
                 formatting=formatting,
                 hyperlink=hyperlink,
                 font_metadata=font_metadata,
+                background_color=background_color,
             )
             if prov:
                 text_item.prov.append(prov)
@@ -2780,6 +2789,7 @@ class DoclingDocument(BaseModel):
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
         font_metadata: Optional[List[Dict[str, Any]]] = None,
+        background_color: Optional[str] = None,
     ):
         """add_title.
 
@@ -2805,6 +2815,7 @@ class DoclingDocument(BaseModel):
             formatting=formatting,
             hyperlink=hyperlink,
             font_metadata=font_metadata,
+            background_color=background_color,
         )
         if prov:
             item.prov.append(prov)
@@ -2828,6 +2839,7 @@ class DoclingDocument(BaseModel):
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
         font_metadata: Optional[List[Dict[str, Any]]] = None,
+        background_color: Optional[str] = None,
     ):
         """add_code.
 
@@ -2855,6 +2867,7 @@ class DoclingDocument(BaseModel):
             formatting=formatting,
             hyperlink=hyperlink,
             font_metadata=font_metadata,
+            background_color=background_color,
         )
         if code_language:
             code_item.code_language = code_language
@@ -2880,6 +2893,7 @@ class DoclingDocument(BaseModel):
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
         font_metadata: Optional[List[Dict[str, Any]]] = None,
+        background_color: Optional[str] = None,
     ):
         """add_formula.
 
@@ -2905,6 +2919,7 @@ class DoclingDocument(BaseModel):
             formatting=formatting,
             hyperlink=hyperlink,
             font_metadata=font_metadata,
+            background_color=background_color,
         )
         if prov:
             section_header_item.prov.append(prov)
@@ -2927,6 +2942,7 @@ class DoclingDocument(BaseModel):
         formatting: Optional[Formatting] = None,
         hyperlink: Optional[Union[AnyUrl, Path]] = None,
         font_metadata: Optional[List[Dict[str, Any]]] = None,
+        background_color: Optional[str] = None,
     ):
         """add_heading.
 
@@ -2954,6 +2970,7 @@ class DoclingDocument(BaseModel):
             formatting=formatting,
             hyperlink=hyperlink,
             font_metadata=font_metadata,
+            background_color=background_color,
         )
         if prov:
             section_header_item.prov.append(prov)
